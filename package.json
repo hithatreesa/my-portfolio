@@ -1,0 +1,21 @@
+{
+  "name": "hitha-treesa-thomas-portfolio",
+  "version": "1.0.0",
+  "description": "Personal DevOps Portfolio for Hitha Treesa Thomas",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y live-server . --port=3000",
+    "start": "npx -y live-server . --port=3000",
+    "serve": "npx -y http-server . -p 3000 -c-1"
+  },
+  "keywords": [
+    "devops",
+    "portfolio",
+    "docker",
+    "linux",
+    "cloud",
+    "ci-cd"
+  ],
+  "author": "Hitha Treesa Thomas",
+  "license": "MIT"
+}

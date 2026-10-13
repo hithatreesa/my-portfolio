@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hitha Treesa Thomas — Aspiring DevOps Engineer. BCA graduate with web development experience, building practical skills in Linux, Docker, CI/CD pipelines, automation, and cloud technologies.">
+  <meta name="keywords" content="Hitha Treesa Thomas, DevOps Engineer, Junior DevOps, Cloud Support, Linux, Docker, CI/CD, AWS, Bangalore">
+  <meta name="author" content="Hitha Treesa Thomas">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Hitha Treesa Thomas | Aspiring DevOps Engineer">
+  <meta property="og:description" content="Portfolio of Hitha Treesa Thomas — Aspiring DevOps Engineer passionate about automation, containerization, and cloud infrastructure.">
+  <meta property="og:type" content="website">
+  
+  <title>Hitha Treesa Thomas | Aspiring DevOps Engineer</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  
+  <!-- Google Fonts: Plus Jakarta Sans, Caveat (Cute Handwriting), JetBrains Mono (DevOps Terminal) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Decorative Background Canvas for gentle ambient sparkles -->
+  <canvas id="ambient-canvas" class="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo" aria-label="Hitha Treesa Thomas Portfolio Home">
+        <span class="logo-handwriting">Hitha</span>
+        <span class="logo-heart">♡</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Navigation Actions -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light and dark theme" title="Toggle theme">
+          <span class="theme-icon sun-icon" aria-hidden="true"><i class="fa-solid fa-sun"></i></span>
+          <span class="theme-icon moon-icon" aria-hidden="true"><i class="fa-solid fa-moon"></i></span>
+        </button>
+
+        <!-- Let's Connect Button -->
+        <a href="#contact" class="btn btn-connect-nav">
+          <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+          <span>Let's Connect</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-hidden="true" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <div class="drawer-brand">
+        <span class="logo-handwriting">Hitha</span>
+        <span class="logo-heart">♡</span>
+      </div>
+      <button id="drawer-close" class="drawer-close" aria-label="Close mobile menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="drawer-list">
+      <li><a href="#home" class="drawer-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#about" class="drawer-link"><i class="fa-solid fa-user"></i> About</a></li>
+      <li><a href="#skills" class="drawer-link"><i class="fa-solid fa-laptop-code"></i> Skills</a></li>
+      <li><a href="#projects" class="drawer-link"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+      <li><a href="#experience" class="drawer-link"><i class="fa-solid fa-graduation-cap"></i> Experience</a></li>
+      <li><a href="#contact" class="drawer-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="#contact" class="btn btn-primary btn-block">
+        <i class="fa-regular fa-envelope"></i> Let's Connect
+      </a>
+      <div class="drawer-socials">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:hithatreesathomas@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        
+        <!-- Hero Content (Left) -->
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <span class="status-pill">
+              <span class="status-dot"></span>
+              Actively seeking Junior DevOps &amp; Cloud Support roles
+            </span>
+          </div>
+
+          <div class="greeting-wrap">
+            <span class="handwritten-accent">Hi, I'm ♡</span>
+          </div>
+
+          <h1 class="hero-name">Hitha Treesa Thomas</h1>
+
+          <div class="hero-title-box">
+            <h2 class="hero-title">Aspiring DevOps Engineer <span class="sparkle-symbol">✧</span></h2>
+          </div>
+
+          <p class="hero-description">
+            I'm a BCA graduate with a background in web development and a growing passion for DevOps and cloud technologies. I'm learning to automate, deploy, and manage reliable systems while building practical skills for my journey into DevOps engineering.
+          </p>
+
+          <!-- Focus Area Pills -->
+          <div class="hero-focus-tags" aria-label="Core focus areas">
+            <span class="focus-tag"><i class="fa-brands fa-linux"></i> Linux &amp; Bash</span>
+            <span class="focus-tag"><i class="fa-brands fa-docker"></i> Docker Containers</span>
+            <span class="focus-tag"><i class="fa-solid fa-code-branch"></i> CI/CD Pipelines</span>
+            <span class="focus-tag"><i class="fa-brands fa-aws"></i> AWS Cloud Basics</span>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary btn-lg">
+              <span>Explore My Projects</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary btn-lg">
+              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              <span>Let's Connect</span>
+            </a>
+            <button id="open-resume-btn" class="btn btn-outline btn-lg" title="Preview Resume Summary">
+              <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+              <span>View Resume</span>
+            </button>
+          </div>
+
+          <!-- Social Links & Decorative Arrow -->
+          <div class="hero-social-block">
+            <span class="social-label">Find me on:</span>
+            <div class="social-links-list">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile (Placeholder)" title="GitHub: github.com/hitha-treesa">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile (Placeholder)" title="LinkedIn: linkedin.com/in/hitha-treesa-thomas">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:hithatreesathomas@example.com" class="social-icon-btn" aria-label="Send Email" title="Email: hithatreesathomas@example.com">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+            <div class="hero-social-note">
+              <span class="handwritten-sm">always happy to chat tech! ✦</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Character Illustration (Right) -->
+        <div class="hero-visual">
+          <div class="character-card" id="character-card">
+            <!-- Organic Lavender Glow Shape Behind Character -->
+            <div class="character-backdrop-blob" aria-hidden="true"></div>
+            
+            <!-- Decorative Doodles Floating Around Character -->
+            <div class="doodle doodle-star doodle-top-left" aria-hidden="true">✦</div>
+            <div class="doodle doodle-sparkle doodle-top-right" aria-hidden="true">✧</div>
+            <div class="doodle doodle-heart doodle-bottom-left" aria-hidden="true">♡</div>
+            <div class="doodle doodle-star doodle-bottom-right" aria-hidden="true">★</div>
+            
+            <!-- Character Image Frame -->
+            <div class="character-image-container" id="character-interactive-wrap">
+              <img 
+                src="assets/character.png" 
+                alt="Digital illustration of Hitha Treesa Thomas, smiling with shoulder-length curly black hair with warm brown highlights, wearing a charcoal grey blazer and working on a laptop." 
+                class="character-img"
+                id="hero-character-img"
+                loading="eager"
+              >
+              
+              <!-- Interactive Speech Bubble (responds on click or hover) -->
+              <div class="speech-bubble" id="character-speech-bubble" aria-live="polite">
+                <span>Building reliable pipelines &amp; learning every day! ✨</span>
+              </div>
+            </div>
+
+            <!-- Signature Handwritten Note with Curved Doodle Arrow -->
+            <div class="devops-progress-tag" id="devops-tag">
+              <div class="doodle-curved-arrow" aria-hidden="true">
+                <svg width="46" height="34" viewBox="0 0 46 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M42 3C32 2 12 6 8 26M8 26L3 20M8 26L16 23" stroke="#8B78B8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span class="progress-note-text">DevOps in progress... ♡</span>
+            </div>
+
+            <!-- Subtle Tech Prop Badges Floating -->
+            <div class="floating-badge badge-docker" title="Practicing Docker containerization">
+              <i class="fa-brands fa-docker"></i>
+              <span>Docker</span>
+            </div>
+            <div class="floating-badge badge-ci" title="Automating GitHub Actions workflows">
+              <i class="fa-solid fa-infinity"></i>
+              <span>CI / CD</span>
+            </div>
+            <div class="floating-badge badge-linux" title="Mastering Linux CLI">
+              <i class="fa-brands fa-linux"></i>
+              <span>Linux</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+      <!-- Gentle Scroll Down Indicator -->
+      <a href="#about" class="scroll-down-hint" aria-label="Scroll to About section">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll to explore</span>
+        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-eyebrow">
+            <span class="handwritten-accent">get to know me ♡</span>
+          </span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Bridging my web background with a passionate pursuit of DevOps engineering &amp; cloud automation.</p>
+          <div class="section-divider" aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-heart">♡</span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Left Column: Portrait & Quick Profile Card -->
+          <div class="about-profile-card">
+            <div class="about-avatar-wrap">
+              <img 
+                src="assets/avatar.png" 
+                alt="Portrait avatar of Hitha Treesa Thomas" 
+                class="about-avatar-img"
+              >
+              <span class="about-avatar-badge" title="Ready to contribute and learn!">
+                <i class="fa-solid fa-sparkles"></i>
+              </span>
+            </div>
+
+            <h3 class="about-card-name">Hitha Treesa Thomas</h3>
+            <p class="about-card-role">Aspiring DevOps Engineer</p>
+
+            <ul class="about-quick-specs">
+              <li>
+                <div class="spec-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="spec-info">
+                  <span class="spec-label">Education</span>
+                  <span class="spec-value">BCA, Bengaluru North University</span>
+                </div>
+              </li>
+              <li>
+                <div class="spec-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <div class="spec-info">
+                  <span class="spec-label">Prior Background</span>
+                  <span class="spec-value">Junior Web Developer (~5 Mos)</span>
+                </div>
+              </li>
+              <li>
+                <div class="spec-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="spec-info">
+                  <span class="spec-label">Location</span>
+                  <span class="spec-value">Bangalore, Karnataka, India</span>
+                </div>
+              </li>
+              <li>
+                <div class="spec-icon"><i class="fa-solid fa-bullseye"></i></div>
+                <div class="spec-info">
+                  <span class="spec-label">Career Target</span>
+                  <span class="spec-value">Entry-Level / Junior DevOps &amp; Cloud</span>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Core Philosophy Quote Card -->
+            <div class="philosophy-quote-box">
+              <span class="quote-mark">“</span>
+              <p class="quote-text">
+                Code shouldn't just work on one laptop; it should flow smoothly, automatically, and reliably into production.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Column: Narrative & Values -->
+          <div class="about-narrative">
+            <div class="narrative-card">
+              <h3 class="narrative-heading">
+                <i class="fa-solid fa-compass" aria-hidden="true"></i>
+                My Journey to DevOps
+              </h3>
+              <p class="narrative-p">
+                I graduated with a <strong>Bachelor of Computer Applications (BCA)</strong> from <strong>Bengaluru North University</strong>, where I developed strong fundamentals in computer networks, operating systems, and database architecture.
+              </p>
+              <p class="narrative-p">
+                During my five months as a <strong>Junior Web Developer</strong>, I loved shipping features, but I became even more fascinated by what happened <em>after</em> the code was written: How do servers get provisioned? How can build errors be caught before manual testing? How can environments be reproduced seamlessly without configuration drift?
+              </p>
+              <p class="narrative-p">
+                That curiosity sparked my shift into <strong>DevOps engineering</strong>. I am now dedicating my daily focus to hands-on learning: mastering the Linux terminal, writing Bash automation scripts, containerizing services with Docker, and setting up automated CI/CD pipelines with GitHub Actions.
+              </p>
+            </div>
+
+            <!-- 3 Core Pillars Cards -->
+            <div class="pillars-grid">
+              <div class="pillar-card">
+                <div class="pillar-icon-wrap icon-purple">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <h4 class="pillar-title">Automation Mindset</h4>
+                <p class="pillar-desc">
+                  If a task has to be done more than twice, script it. Striving to replace manual server touches with repeatable Bash scripts and automated jobs.
+                </p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon-wrap icon-lavender">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h4 class="pillar-title">Reliability First</h4>
+                <p class="pillar-desc">
+                  Understanding that smooth deployments, clear logs, and isolated containers are the foundation of healthy applications and happy teams.
+                </p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon-wrap icon-slate">
+                  <i class="fa-solid fa-seedling"></i>
+                </div>
+                <h4 class="pillar-title">Active Learner</h4>
+                <p class="pillar-desc">
+                  Comfortable asking questions, reading documentation, and breaking lab setups to understand how systems behave when things go wrong.
+                </p>
+              </div>
+            </div>
+
+            <!-- Current Lab Focus Banner -->
+            <div class="current-lab-card">
+              <div class="lab-card-header">
+                <div class="lab-pulse-indicator">
+                  <span class="lab-pulse-dot"></span>
+                  <span class="lab-pulse-text">CURRENTLY IN MY LAB</span>
+                </div>
+                <span class="lab-tag">Hands-on Practice</span>
+              </div>
+              <p class="lab-body">
+                Configuring multi-container Docker Compose environments with isolated bridge networks, writing GitHub Actions workflows for automated build checks, and practicing Linux system administration commands.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-eyebrow">
+            <span class="handwritten-accent">technical toolkit ♡</span>
+          </span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-subtitle">
+            A transparent breakdown distinguishing the DevOps technologies I am actively mastering from my foundational web background.
+          </p>
+          <div class="section-divider" aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-heart">♡</span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="skills-filter-nav" role="tablist" aria-label="Skills Category Filter">
+          <button class="skill-filter-btn active" data-filter="all" role="tab" aria-selected="true">
+            <i class="fa-solid fa-border-all"></i> All Technologies
+          </button>
+          <button class="skill-filter-btn" data-filter="devops" role="tab" aria-selected="false">
+            <i class="fa-solid fa-infinity"></i> DevOps &amp; CI/CD
+          </button>
+          <button class="skill-filter-btn" data-filter="linux" role="tab" aria-selected="false">
+            <i class="fa-brands fa-linux"></i> Linux &amp; Automation
+          </button>
+          <button class="skill-filter-btn" data-filter="cloud" role="tab" aria-selected="false">
+            <i class="fa-solid fa-cloud"></i> Cloud &amp; Networking
+          </button>
+          <button class="skill-filter-btn" data-filter="foundation" role="tab" aria-selected="false">
+            <i class="fa-solid fa-code"></i> Web &amp; Foundations
+          </button>
+        </div>
+
+        <!-- Skills Cards Grid -->
+        <div class="skills-grid" id="skills-grid">
+
+          <!-- 1. Linux Administration -->
+          <div class="skill-card" data-category="linux">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <i class="fa-brands fa-linux"></i>
+              </div>
+              <span class="skill-badge badge-learning">
+                <i class="fa-solid fa-rotate"></i> Actively Learning
+              </span>
+            </div>
+            <h3 class="skill-title">Linux (Ubuntu / Debian)</h3>
+            <p class="skill-desc">
+              Navigation, file system hierarchies, permissions (`chmod`, `chown`), user management, process inspection (`ps`, `top`, `systemctl`), and service logs.
+            </p>
+            <div class="skill-tags">
+              <span>CLI Fundamentals</span>
+              <span>File Permissions</span>
+              <span>Systemd</span>
+              <span>Package Mgmt</span>
+            </div>
+            <div class="skill-level-bar-wrap">
+              <div class="skill-level-meta">
+                <span>Lab Practice</span>
+                <span>Active Study</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 78%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Docker & Containerization -->
+          <div class="skill-card" data-category="devops">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <i class="fa-brands fa-docker"></i>
+              </div>
+              <span class="skill-badge badge-learning">
+                <i class="fa-solid fa-rotate"></i> Actively Learning
+              </span>
+            </div>
+            <h3 class="skill-title">Docker &amp; Containers</h3>
+            <p class="skill-desc">
+              Writing Dockerfiles, multi-stage builds, managing container lifecycles, port forwarding, bind mounts/volumes, and basic Docker Compose multi-service definitions.
+            </p>
+            <div class="skill-tags">
+              <span>Dockerfiles</span>
+              <span>Images &amp; Layers</span>
+              <span>Compose</span>
+              <span>Volumes</span>
+            </div>
+            <div class="skill-level-bar-wrap">
+              <div class="skill-level-meta">
+                <span>Lab Practice</span>
+                <span>Active Study</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 72%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Git & GitHub -->
+          <div class="skill-card" data-category="devops foundation">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <i class="fa-brands fa-git-alt"></i>
+              </div>
+              <span class="skill-badge badge-working">
+                <i class="fa-solid fa-check"></i> Working Knowledge
+              </span>
+            </div>
+            <h3 class="skill-title">Git &amp; Version Control</h3>
+            <p class="skill-desc">
+              Branching strategies, merge conflict resolution, pull request workflows, commit conventions, rebasing, and managing remote GitHub repositories.
+            </p>
+            <div class="skill-tags">
+              <span>Branching</span>
+              <span>PR Workflows</span>
+              <span>Merge &amp; Rebase</span>
+              <span>GitHub</span>
+            </div>
+            <div class="skill-level-bar-wrap">
+              <div class="skill-level-meta">
+                <span>Experience</span>
+                <span>Solid Working</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. CI/CD & GitHub Actions -->
+          <div class="skill-card" data-category="devops">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <i class="fa-solid fa-gears"></i>
+              </div>
+              <span class="skill-badge badge-learning">
+                <i class="fa-solid fa-rotate"></i> Actively Learning
+              </span>
+            </div>
+            <h3 class="skill-title">CI/CD &amp; GitHub Actions</h3>
+            <p class="skill-desc">
+              Authoring YAML workflows triggered by push/PR events, automated linting, test runners, artifact caching, environment secrets, and automated Docker image builds.
+            </p>
+            <div class="skill-tags">
+              <span>YAML Pipelines</span>
+              <span>Triggers &amp; Jobs</span>
+              <span>Automated Testing</span>
+              <span>Secrets</span>
+            </div>
+            <div class="skill-level-bar-wrap">
+              <div class="skill-level-meta">
+                <span>Lab Practice</span>
+                <span>Active Study</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 68%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Bash Scripting & Automation -->
+          <div class="skill-card" data-category="linux">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <i class="fa-solid fa-terminal"></i>
+              </div>
+              <span class="skill-badge badge-learning">
+                <i class="fa-solid fa-rotate"></i> Actively Learning
+              </span>
+            </div>
+            <h3 class="skill-title">Bash Automation</h3>
+            <p class="skill-desc">
+              Automating system tasks using shell scripts: variables, loops, conditional checks, cron job scheduling, log rotation, and automated directory backups.
+            </p>
+            <div class="skill-tags">
+              <span>Shell Scripts</span>
+              <span>Cron Jobs</span>
+              <span>Log Parsing</span>
+              <span>Backups</span>
+            </div>
+            <div class="skill-level-bar-wrap">
+              <div class="skill-level-meta">
+                <span>Lab Practice</span>
+                <span>Active Study</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 70%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Cloud Foundations (AWS) -->
+          <div class="skill-card" data-category="cloud">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <i class="fa-brands fa-aws"></i>
+              </div>
+              <span class="skill-badge badge-learning">
+                <i class="fa-solid fa-rotate"></i> Actively Learning
+              </span>
+            </div>
+            <h3 class="skill-title">AWS Cloud Basics</h3>
+            <p class="skill-desc">
+              Core cloud concepts and hands-on explorations with Amazon EC2 instance provisioning, S3 bucket storage, security groups, basic IAM policies, and CloudFront.
+            </p>
+            <div class="skill-tags">
+              <span>Amazon EC2</span>
+              <span>Amazon S3</span>
+              <span>IAM &amp; Security</span>
+              <span>CloudFront</span>
+            </div>
+            <div class="skill-level-bar-wrap">
+              <div class="skill-level-meta">
+                <span>Lab Practice</span>
+                <span>Active Study</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 62%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Networking & Web Infrastructure -->
+          <div class="skill-card" data-category="cloud">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <span class="skill-badge badge-foundation">
+                <i class="fa-solid fa-book"></i> Coursework &amp; Study
+              </span>
+            </div>
+            <h3 class="skill-title">Networking &amp; Protocols</h3>
+            <p class="skill-desc">
+              Understanding TCP/IP, OSI model layers, DNS resolution, HTTP/HTTPS request-response cycles, SSL/TLS certificates, ports, and SSH key authentication.
+            </p>
+            <div class="skill-tags">
+              <span>DNS &amp; Domains</span>
+              <span>HTTP / HTTPS</span>
+              <span>SSH Keys</span>
+              <span>TCP/IP Basics</span>
+            </div>
+            <div class="skill-level-bar-wrap">
+              <div class="skill-level-meta">
+                <span>BCA Foundation</span>
+                <span>Coursework</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Web Development Background (HTML, CSS, JS) -->
+          <div class="skill-card" data-category="foundation">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <span class="skill-badge badge-working">
+                <i class="fa-solid fa-check"></i> Prior Experience
+              </span>
+            </div>
+            <h3 class="skill-title">Web Development (Background)</h3>
+            <p class="skill-desc">
+              Practical experience from 5 months as Junior Web Developer: HTML5, CSS3, JavaScript, DOM manipulation, responsive design, and debugging web apps.
+            </p>
+            <div class="skill-tags">
+              <span>HTML5 / CSS3</span>
+              <span>JavaScript</span>
+              <span>Responsive UI</span>
+              <span>Debugging</span>
+            </div>
+            <div class="skill-level-bar-wrap">
+              <div class="skill-level-meta">
+                <span>Experience</span>
+                <span>Junior Level</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 82%;"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-eyebrow">
+            <span class="handwritten-accent">hands-on practice ♡</span>
+          </span>
+          <h2 class="section-title">DevOps &amp; Cloud Projects</h2>
+          <p class="section-subtitle">
+            Practical lab implementations demonstrating containerization, automated build pipelines, Linux system administration, and cloud deployment.
+          </p>
+          <div class="section-divider" aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-heart">♡</span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- PROJECT 1: Automated Web Application Containerization -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-number">01</div>
+              <span class="project-category-tag"><i class="fa-brands fa-docker"></i> Containerization</span>
+            </div>
+            
+            <div class="project-card-body">
+              <h3 class="project-title">Automated Web App Containerization &amp; Multi-Tier Setup</h3>
+              <p class="project-description">
+                Containerized a multi-tier web application using Docker and Docker Compose. Configured optimized multi-stage Dockerfiles to minimize image footprints, isolated bridge networking between services, and persisted data with Docker volumes.
+              </p>
+              
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span>Eliminated "works on my machine" issues with reproducible environments</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span>Reduced production image size by ~55% through multi-stage builds</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Docker</span>
+                <span class="tech-pill">Docker Compose</span>
+                <span class="tech-pill">Linux</span>
+                <span class="tech-pill">Nginx</span>
+                <span class="tech-pill">Git</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-sm btn-outline view-arch-btn" data-project="docker-app">
+                <i class="fa-solid fa-diagram-project"></i> Architecture
+              </button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary" title="View project repository (Placeholder)">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: GitHub Actions CI/CD Pipeline -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-number">02</div>
+              <span class="project-category-tag"><i class="fa-solid fa-gears"></i> Automation / CI/CD</span>
+            </div>
+            
+            <div class="project-card-body">
+              <h3 class="project-title">GitHub Actions Automated CI/CD Pipeline</h3>
+              <p class="project-description">
+                Engineered a comprehensive continuous integration workflow that triggers automatically on pull requests and pushes to main. Executes code linting, automated testing suites, builds container images, and stores build artifacts.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span>Automated test enforcement preventing broken code from merging</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span>Secure environment secrets management with GitHub repository tokens</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">GitHub Actions</span>
+                <span class="tech-pill">YAML</span>
+                <span class="tech-pill">Docker</span>
+                <span class="tech-pill">Bash</span>
+                <span class="tech-pill">CI/CD</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-sm btn-outline view-arch-btn" data-project="cicd-pipeline">
+                <i class="fa-solid fa-diagram-project"></i> Architecture
+              </button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary" title="View pipeline repository (Placeholder)">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Linux Server Provisioning & Automation Toolkit -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-number">03</div>
+              <span class="project-category-tag"><i class="fa-brands fa-linux"></i> Linux &amp; Bash</span>
+            </div>
+            
+            <div class="project-card-body">
+              <h3 class="project-title">Linux Server Provisioning &amp; Health Automation Toolkit</h3>
+              <p class="project-description">
+                Developed a suite of modular Bash automation scripts to bootstrap fresh Ubuntu server instances: configured non-root sudo users, implemented SSH key hardening, established UFW firewall rules, and scheduled cron jobs for log rotation and automated backups.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span>Automated server baseline configuration in under 3 minutes</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span>Automated disk space and memory monitoring script with warning alerts</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Bash</span>
+                <span class="tech-pill">Linux (Ubuntu)</span>
+                <span class="tech-pill">Systemd</span>
+                <span class="tech-pill">Cron</span>
+                <span class="tech-pill">SSH</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-sm btn-outline view-arch-btn" data-project="linux-toolkit">
+                <i class="fa-solid fa-diagram-project"></i> Architecture
+              </button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary" title="View script repository (Placeholder)">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: AWS Static Site Cloud Architecture -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-number">04</div>
+              <span class="project-category-tag"><i class="fa-brands fa-aws"></i> Cloud Infrastructure</span>
+            </div>
+            
+            <div class="project-card-body">
+              <h3 class="project-title">AWS S3 &amp; CloudFront Secure Static Hosting Architecture</h3>
+              <p class="project-description">
+                Architected and deployed a highly available, low-latency web hosting setup using AWS S3 bucket storage paired with AWS CloudFront Content Delivery Network (CDN) edge caching, custom DNS routing, and HTTPS enforcement via ACM SSL/TLS.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span>Origin Access Control (OAC) restricting direct public bucket access</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span>Global edge CDN caching resulting in sub-100ms global load times</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">AWS S3</span>
+                <span class="tech-pill">CloudFront</span>
+                <span class="tech-pill">Route 53</span>
+                <span class="tech-pill">SSL / TLS</span>
+                <span class="tech-pill">Security</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-sm btn-outline view-arch-btn" data-project="aws-hosting">
+                <i class="fa-solid fa-diagram-project"></i> Architecture
+              </button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary" title="View AWS documentation (Placeholder)">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== INTERACTIVE DEVOPS LAB TERMINAL ==================== -->
+    <section class="section terminal-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-eyebrow">
+            <span class="handwritten-accent">try it yourself ♡</span>
+          </span>
+          <h2 class="section-title">Interactive DevOps Lab Terminal</h2>
+          <p class="section-subtitle">
+            An interactive command line demonstrating my understanding of Linux, Docker, and Git workflows. Try typing a command or clicking a shortcut below!
+          </p>
+          <div class="section-divider" aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-heart">♡</span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+
+        <div class="terminal-wrapper">
+          <!-- Terminal Window Header -->
+          <div class="terminal-bar">
+            <div class="terminal-window-buttons">
+              <span class="term-btn btn-close"></span>
+              <span class="term-btn btn-min"></span>
+              <span class="term-btn btn-max"></span>
+            </div>
+            <div class="terminal-title">
+              <i class="fa-solid fa-terminal"></i> hitha@devops-lab:~ (bash)
+            </div>
+            <div class="terminal-status-chip">
+              <span class="chip-dot"></span> LIVE
+            </div>
+          </div>
+
+          <!-- Terminal Output Screen -->
+          <div class="terminal-body" id="terminal-screen" tabindex="0" role="region" aria-label="Terminal output screen">
+            <div class="terminal-line term-system">Welcome to Hitha's DevOps interactive laboratory session!</div>
+            <div class="terminal-line term-system">Type 'help' or click the command badges below to interact.</div>
+            <div class="terminal-line term-system">--------------------------------------------------</div>
+            <div class="terminal-output-log" id="terminal-output-log">
+              <!-- Dynamic output goes here -->
+            </div>
+            <div class="terminal-input-row">
+              <span class="term-prompt">hitha@devops-lab:~$</span>
+              <input type="text" id="terminal-input" class="term-input" placeholder="Type a command (e.g., 'help', 'devops-status')..." autocomplete="off" spellcheck="false" aria-label="Terminal command input">
+            </div>
+          </div>
+
+          <!-- Quick Command Badges -->
+          <div class="terminal-presets">
+            <span class="presets-label"><i class="fa-solid fa-wand-magic"></i> Quick Commands:</span>
+            <button class="term-chip" data-cmd="help">help</button>
+            <button class="term-chip" data-cmd="devops-status">devops-status</button>
+            <button class="term-chip" data-cmd="docker ps">docker ps</button>
+            <button class="term-chip" data-cmd="cat resume.txt">cat resume.txt</button>
+            <button class="term-chip" data-cmd="uname -a">uname -a</button>
+            <button class="term-chip" data-cmd="clear">clear</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE & EDUCATION SECTION ==================== -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-eyebrow">
+            <span class="handwritten-accent">my background ♡</span>
+          </span>
+          <h2 class="section-title">Experience &amp; Education</h2>
+          <p class="section-subtitle">
+            How my academic foundation in computer applications and hands-on web development experience led me to pursue DevOps.
+          </p>
+          <div class="section-divider" aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-heart">♡</span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- TIMELINE ITEM 1: Ongoing DevOps Journey -->
+          <div class="timeline-card current-timeline">
+            <div class="timeline-marker">
+              <div class="marker-dot"><i class="fa-solid fa-infinity"></i></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header-meta">
+                <span class="timeline-date-badge">Present • Ongoing Focus</span>
+                <span class="timeline-type-pill pill-learning">Hands-on Upskilling</span>
+              </div>
+              <h3 class="timeline-role">DevOps &amp; Cloud Engineering Self-Directed Specialization</h3>
+              <h4 class="timeline-company">Independent Hands-on Laboratory Practice</h4>
+              <p class="timeline-description">
+                Immersed in daily practical labs focusing on Linux administration, Docker containerization, CI/CD with GitHub Actions, and AWS infrastructure fundamentals. Building reproducible test environments and understanding system reliability.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Configured multi-container environments and custom bridge networks with Docker Compose.</li>
+                <li>Created automated GitHub Actions workflows for continuous integration and lint verification.</li>
+                <li>Practicing Bash scripting for routine Linux server maintenance, user management, and cron jobs.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Linux</span>
+                <span>Docker</span>
+                <span>GitHub Actions</span>
+                <span>AWS Basics</span>
+                <span>Bash Automation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TIMELINE ITEM 2: Junior Web Developer Experience -->
+          <div class="timeline-card">
+            <div class="timeline-marker">
+              <div class="marker-dot"><i class="fa-solid fa-code"></i></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header-meta">
+                <span class="timeline-date-badge">5 Months Experience</span>
+                <span class="timeline-type-pill pill-work">Work Experience</span>
+              </div>
+              <h3 class="timeline-role">Junior Web Developer</h3>
+              <h4 class="timeline-company">Professional Web Development Experience</h4>
+              <p class="timeline-description">
+                Worked as a Junior Web Developer for approximately five months. Contributed to building responsive web interfaces, collaborating with team members using Git version control, and troubleshooting cross-browser and deployment issues.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Collaborated in version-controlled workflows using Git branches, commits, and pull requests.</li>
+                <li>Assisted with testing, debugging, and resolving front-facing defects before production releases.</li>
+                <li>Gained practical exposure to deployment cycles, which ignited my passion for automating delivery pipelines and infrastructure management.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Web Development</span>
+                <span>Git &amp; GitHub</span>
+                <span>Debugging</span>
+                <span>Deployment Collaboration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TIMELINE ITEM 3: BCA Education -->
+          <div class="timeline-card">
+            <div class="timeline-marker">
+              <div class="marker-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header-meta">
+                <span class="timeline-date-badge">Undergraduate Degree</span>
+                <span class="timeline-type-pill pill-edu">Formal Education</span>
+              </div>
+              <h3 class="timeline-role">Bachelor of Computer Applications (BCA)</h3>
+              <h4 class="timeline-company">Bengaluru North University</h4>
+              <p class="timeline-description">
+                Graduated with a strong academic foundation in computer science and software development principles. Deepened understanding of how operating systems handle memory, how networking protocols transfer packets, and how databases store structured data.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Operating Systems: Process scheduling, file systems, concurrency, and virtual memory.</li>
+                <li>Computer Networks: OSI and TCP/IP protocol stacks, IP addressing, DNS, and routing.</li>
+                <li>Database Management Systems (DBMS): Relational data modeling, SQL queries, and normalization.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Operating Systems</span>
+                <span>Computer Networks</span>
+                <span>DBMS</span>
+                <span>Software Engineering</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-eyebrow">
+            <span class="handwritten-accent">say hello ♡</span>
+          </span>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">
+            I am actively looking for Entry-Level DevOps Engineer, Junior DevOps Engineer, and Cloud Support Associate opportunities. Let's discuss how I can contribute to your team!
+          </p>
+          <div class="section-divider" aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-heart">♡</span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info Cards (Left) -->
+          <div class="contact-info-panel">
+            <div class="contact-info-header">
+              <h3 class="panel-heading">Open to Opportunities</h3>
+              <p class="panel-desc">
+                Whether you have an open junior DevOps position, an internship opportunity, or want to share feedback on my projects, my inbox is always open!
+              </p>
+            </div>
+
+            <div class="contact-cards-list">
+              <!-- Email Card -->
+              <a href="mailto:hithatreesathomas@example.com" class="contact-method-card" title="Click to compose an email">
+                <div class="method-icon-wrap">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Direct Email</span>
+                  <span class="method-value">hithatreesathomas@example.com</span>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square method-arrow"></i>
+              </a>
+
+              <!-- LinkedIn Card -->
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-method-card" title="Open LinkedIn Profile (Placeholder)">
+                <div class="method-icon-wrap">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">LinkedIn Profile</span>
+                  <span class="method-value">linkedin.com/in/hitha-treesa-thomas</span>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square method-arrow"></i>
+              </a>
+
+              <!-- GitHub Card -->
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-method-card" title="Open GitHub Profile (Placeholder)">
+                <div class="method-icon-wrap">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">GitHub Repositories</span>
+                  <span class="method-value">github.com/hitha-treesa</span>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square method-arrow"></i>
+              </a>
+
+              <!-- Location Card -->
+              <div class="contact-method-card static-card">
+                <div class="method-icon-wrap">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Current Base</span>
+                  <span class="method-value">Bangalore, Karnataka, India</span>
+                </div>
+                <span class="badge-timezone">IST (UTC +5:30)</span>
+              </div>
+            </div>
+
+            <!-- Recruitment Availability Card -->
+            <div class="availability-callout">
+              <div class="callout-icon"><i class="fa-solid fa-calendar-check"></i></div>
+              <div class="callout-text">
+                <strong>Notice Period &amp; Relocation:</strong>
+                <p>Available to join immediately for roles in Bangalore, hybrid opportunities, or remote positions.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Contact Form (Right) -->
+          <div class="contact-form-panel">
+            <div class="form-card">
+              <h3 class="form-heading">Send a Message <span class="handwritten-accent">✉</span></h3>
+              <p class="form-subtext">Fill out this quick form and I will get back to you promptly.</p>
+
+              <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Your Name <span class="req">*</span></label>
+                  <div class="input-wrap">
+                    <i class="fa-regular fa-user input-icon"></i>
+                    <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Jane Smith" required>
+                  </div>
+                  <span class="field-error" id="name-error">Please enter your name.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Your Email <span class="req">*</span></label>
+                  <div class="input-wrap">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                    <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. jane@company.com" required>
+                  </div>
+                  <span class="field-error" id="email-error">Please provide a valid email address.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-subject" class="form-label">Subject / Role</label>
+                  <div class="input-wrap">
+                    <i class="fa-solid fa-tag input-icon"></i>
+                    <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="e.g. Junior DevOps Opportunity">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">Your Message <span class="req">*</span></label>
+                  <div class="input-wrap textarea-wrap">
+                    <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Hello Hitha, we came across your portfolio and would like to talk about..." required></textarea>
+                  </div>
+                  <span class="field-error" id="message-error">Please enter a brief message.</span>
+                </div>
+
+                <button type="submit" id="submit-contact-btn" class="btn btn-primary btn-block btn-lg">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  <span>Send Message</span>
+                </button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">
+            <span class="logo-handwriting">Hitha</span>
+            <span class="logo-heart">♡</span>
+          </a>
+          <p class="footer-tagline">
+            Aspiring DevOps Engineer • Automating systems with care &amp; curiosity.
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#skills" class="footer-link">Skills</a>
+          <a href="#projects" class="footer-link">Projects</a>
+          <a href="#experience" class="footer-link">Experience</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:hithatreesathomas@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          Designed with soft lavender elegance &amp; pride for <strong>Hitha Treesa Thomas</strong>.
+        </p>
+        <p class="footer-note">
+          Built with semantic HTML, modern Vanilla CSS, and clean JavaScript ✧
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== BACK TO TOP BUTTON ==================== -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top" title="Scroll to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- ==================== ARCHITECTURE FLOW MODAL ==================== -->
+  <div class="modal-backdrop" id="arch-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-arch-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-badge"><i class="fa-solid fa-diagram-project"></i> Architecture Overview</span>
+          <h3 id="modal-arch-title" class="modal-title">Project Architecture</h3>
+        </div>
+        <button class="modal-close-btn" id="modal-arch-close" aria-label="Close architecture modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-arch-body">
+        <!-- Injected via JavaScript based on selected project -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== RESUME SUMMARY MODAL ==================== -->
+  <div class="modal-backdrop" id="resume-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-resume-title">
+    <div class="modal-dialog resume-modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-badge"><i class="fa-solid fa-file-lines"></i> Executive Summary</span>
+          <h3 id="modal-resume-title" class="modal-title">Hitha Treesa Thomas — Resume Overview</h3>
+        </div>
+        <button class="modal-close-btn" id="modal-resume-close" aria-label="Close resume modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body resume-modal-body">
+        
+        <div class="resume-sheet">
+          <div class="resume-sheet-header">
+            <div>
+              <h2 class="resume-name">Hitha Treesa Thomas</h2>
+              <p class="resume-title-sub">Aspiring DevOps Engineer | Bangalore, India</p>
+            </div>
+            <div class="resume-contact-sub">
+              <span><i class="fa-solid fa-envelope"></i> hithatreesathomas@example.com</span>
+              <span><i class="fa-brands fa-linkedin"></i> linkedin.com/in/hitha-treesa-thomas</span>
+            </div>
+          </div>
+
+          <div class="resume-section-item">
+            <h4 class="resume-h4">Professional Summary</h4>
+            <p class="resume-p">
+              BCA graduate with practical experience as a Junior Web Developer and a dedicated focus on DevOps engineering. Actively developing practical skills in Linux administration, Docker containerization, automated CI/CD pipelines, and cloud fundamentals. Seeking an entry-level DevOps or Cloud Support role to build resilient, automated infrastructure.
+            </p>
+          </div>
+
+          <div class="resume-section-item">
+            <h4 class="resume-h4">Core Technical Competencies</h4>
+            <div class="resume-tags-list">
+              <span><strong>DevOps &amp; Containers:</strong> Docker, Docker Compose, GitHub Actions, CI/CD YAML</span>
+              <span><strong>OS &amp; Scripting:</strong> Linux (Ubuntu), Bash Scripting, Cron, Systemd</span>
+              <span><strong>Cloud &amp; Networking:</strong> AWS Basics (EC2, S3, IAM, CloudFront), TCP/IP, DNS, SSH</span>
+              <span><strong>Web Background:</strong> HTML5, CSS3, JavaScript, Git &amp; GitHub</span>
+            </div>
+          </div>
+
+          <div class="resume-section-item">
+            <h4 class="resume-h4">Education &amp; Experience</h4>
+            <div class="resume-timeline-entry">
+              <strong>Bachelor of Computer Applications (BCA)</strong> — Bengaluru North University
+            </div>
+            <div class="resume-timeline-entry">
+              <strong>Junior Web Developer</strong> (5 Months Experience) — Responsive development, Git workflow, cross-browser testing &amp; release support.
+            </div>
+          </div>
+
+          <div class="resume-modal-actions">
+            <button id="print-resume-btn" class="btn btn-primary">
+              <i class="fa-solid fa-print"></i> Print / Save as PDF
+            </button>
+            <a href="mailto:hithatreesathomas@example.com?subject=Request%20Full%20Resume%20-%20Hitha%20Treesa%20Thomas" class="btn btn-secondary">
+              <i class="fa-solid fa-envelope"></i> Request Full PDF via Email
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Main JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
